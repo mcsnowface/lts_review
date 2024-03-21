@@ -1,0 +1,205 @@
+---
+title: "Long Term Study of growth and development of mixed stands of spruce and aspen"
+subtitle: "A review of the experiment, monitoring and field manual"
+author:
+ - name: Stefan Schreiber, PhD, Senior Forest Resource Analyst
+ - name: Robert Froese, PhD, Executive Director FGrOW
+#date: December 7, 2023
+date-format: long
+bibliography: lts_references.bib
+format:
+  pdf:
+   include-in-header: 
+      text: |
+        \usepackage{geometry}
+        \usepackage{typearea} 
+   fig-pos: H
+   link-citations: true
+   toc: true
+   html-math-method: katex
+   css: styles.css
+---
+## Source material
+This review is based on what information has been available to me as of (December 04, 2023). All literature that is referenced below has been made available in a separate folder and can be found in the review package.
+
+## Introduction
+
+In Alberta, sustainable forest management involves timber harvesting by private forest companies and takes place on designated Crown forest lands, with cut levels approved by the Government of Alberta (GOA) through an annual allowable cut (AAC) determination. The calculation of the AAC is based on permanent sample plots and statistical methods to forecast future growth and harvest volumes. Initiating, calibrating and validating statistical tools such as growth and yield models requires long-term monitoring data on forest succession, including present and/or anticipated future silvicultural interventions and their effect on future growth trajectories of the stands in question (e.g. monocultures vs. mixtures, geographic area of reforestation). Yet long-term studies that have been designed to provide such information and have been continuously measured for decades are quite rare. Possible reasons might include:
+
+* A lack of funding for future measurements.
+* A change in focus with respect to the initial objectives.
+* Diminished demand for the study results.
+
+In Alberta, one such study initiated in 1990, and still actively measured and analyzed by a collaboration of industrial, federal, provincial, and university researchers, is the [*Long Term Study of Growth and Development of Mixed Stands of Spruce and Aspen*](https://wesbogy.ualberta.ca/long-term-study/) (https://wesbogy.ualberta.ca/long-term-study/)(@tbl-participants), also known as LTS.  
+
+
+|                          Company or Agency                         | Agency Code |    Site Type   | Year Spruce Established |
+|:--------------------------------------------------------------------------|:----------:|:------|:-----------------|
+|                   Government of Alberta                            |     GOA     | n/a   Med |n/a \newline 1992       |
+|               Alberta-Pacific Forest Industries Inc.               |     ALP     | High  Med |1994 \newline 2001       |
+|                    Canadian Forest Products Ltd.                   |     CFR     | High  Med |2000 \newline 2001       |
+|                         Mercer Peace River                         |     MPR     | High  Med |1992 \newline 1992       |
+|               Louisiana-Pacific Canada Ltd., Manitoba              |     LPSR    | High  Med |1998 \newline 1998       |
+|             Louisiana-Pacific Canada Ltd., Dawson Creek            |     LPDC    | High  Med |2001 \newline 2004       |
+| Northwest Territories Resources, Wildlife and Economic Development |     NWT     | High  Med |1993 \newline 1993       |
+|                           Alberta Plywood                          |     WFR     | High  Med |1992 \newline 1993       |
+|              Weyerhaeuser Company, Alberta Forestlands             |     WGP     | High  Med |1991 \newline 1991       |
+|                Government of Saskatchewan                          |     SPA     | High  Med |1990 \newline 1990       |
+|             Wood Fibre Centre, Canadian Forest Service             |     SBR     | High  Med |1992 \newline 1992       |
+
+: Participants of the LTS (Long Term Study). Company / Agency names and codes may vary across different documents since names have been changed over time. Except for the GOA each participant had two installations, one on a median site and one on a superior site {#tbl-participants}
+
+
+## Objectives
+
+The objective of the Long Term Study (LTS) is to quantify the effect, and possible interactions, of six aspen density levels (from 0 to natural) on the growth response of white spruce planted at three different target densities (0, 500, 1000 stems ha^-1^). Data coming from this study will be used for the continuous development of the Mixedwood Growth Model (MGM) as well as other models. With respect to the study objective the most recent manual reads [@bokalo_long_2021, p. 3]:
+
+> *The objectives are to assess total and individual species productivity in the various densities and mixtures. Data on early stand growth, mortality and crown dynamics will be used in development of the Mixedwood Growth Model (MGM) and other models and results will be used to guide management practices.*
+
+> *This long-term research project is a regional cooperative effort by industrial, federal, provincial, and university researchers to evaluate the dynamics of mixedwood stand development following precommercial thinning. The long-term study is regional in scope and "forward looking" as it is based on the premise that future practices will be more intensive than those used today. In this sense it is not restricted to current operational management constraints and regulations.*
+
+## Design 
+
+The design of this long-term monitoring study follows a randomized complete block design with longitudinal response data, meaning the **same populations** are tracked over time. In contrast, cross-sectional data collection would involve the sampling of **different populations** at various successional stages. Longitudinal data collection offers several advantages over cross-sectional data:
+
+1. Capture Temporal Changes: Longitudinal studies allow you to track the same stand over time, providing a detailed understanding of how the forest ecosystem evolves during succession.
+
+2. Precise Succession Tracking: This approach is better suited for understanding the actual trajectory of succession in slow-growing boreal forest trees.
+
+3. Early Detection of Trends: Long-term studies can reveal trends and patterns that may not be apparent in short-term observations.
+
+4. Accurate Data: Longitudinal studies can reduce potential biases associated with differences in site conditions between stands, as you are observing a single stand over time.
+
+Disadvantages are:
+
+1. Resource-Intensive: Longitudinal studies are often more resource-intensive in terms of time, funding, and personnel, as they require continuous monitoring and data collection over an extended period.
+
+2. Potential for Study Disruption: These studies are more vulnerable to external disruptions such as funding cuts, changes in land management practices, or natural disturbances.
+
+In the LTS, each agency (11 agencies in total) is responsible for one block. Blocks were arranged so that they cover a larger geographic extent, extending from Manitoba to British Columbia as well as into the Northwest Territories (@fig-study_locations).
+
+![Long term study (LTS) installations. Each company/agency is responsible for one block, representing the geographic location, and two installations. Taken from: @comeau_effects_2023. ](figs/study_locations.png){#fig-study_locations width=93%}
+
+One block consists of two installations; one on a superior site, and one on a median site (@fig-study_locations). Each installation consists of 2 replications of 15 plots each representing a unique aspen/spruce density treatment combination (@tbl-treatments). In total this would add up to 15 plots $\times$ 2 replicates $\times$ 2 installations (site types) $\times$ 11 participants $=$ 660 plots in total. However, Alberta Forestry and Parks does not have a second installation and Weyerhaeuser Company lost one replicate (a set of 15 plots) to a fire. Taking this into account there are presently, 660 - 2 $\times$ (15 plots) - 15 plots plots $=$ 615 plots in total. 
+
+
+|               |     |Aspen|Density|(#/ha)|           |        |           |
+|:--------------:|----:|---:|---:|---:|----:|----:|-----:|
+|                       |        |**0**|**200**|**500**|**1500**|**4000**|**Natural**|
+| Spruce Density (#/ha) |**1000**|1    |2      |3      |4       |5       |6          |
+|                       |**500** |7    |8      |9      |10      |11      |12         |
+|                       |**0**   |x    |x      |x      |13      |14      |15         |
+
+: Treatment design of the LTS (Long Term Study) associated with the respective plot numbers 1-15 {#tbl-treatments}
+
+Treatment plots measure 0.04 ha in size (20 m $\times$ 20 m) and have permanently marked corners and centers. The natural aspen density plots 6, 12, and 15 (refer to Table @tbl-treatments) were initially divided into four 1 m $\times$ 1 m subplots at the beginning of the experiment. Subsequently, they were expanded to 2 m $\times$ 2 m in the fifth measurement year, and to their final size of 5 m $\times$ 5 m by the twentieth measurement year. This expansion was implemented to manage tree measurement efforts and costs, especially during the early aspen regeneration period characterized by high or even excessive stem densities [@bokalo_long_2021, p. 13, 27, 49].
+
+For the first five years after plot establishment, plots have been regularly cleaned and weeded [@bokalo_long_2021, p. 16]. This involved the removal of all competing vegetation, including dead grass material. The primary goal was to ensure that spruce seedlings have the best possible chance of survival, especially in those early years. Additionally, during the initial four years, it was permissible to replace a dead spruce with a naturally occurring spruce ingress tree to maintain the desired treatment densities [@bokalo_long_2021, p. 21].
+
+One might argue that this approach does not fully replicate natural processes and may introduce bias regarding real mortality rates. However, it seems that this decision was driven by the need to prevent the potential loss of time and financial investments in plot establishment, particularly in cases where spruce mortality was present. Such losses could have had a negative impact on the desired spruce treatment densities as well as the long-term potential of this study.  
+
+In 2019, 2020 and 2021, micro climate stations as well as weather stations were installed in a subset of existing LTS plots as part of the Alberta SMARTFORESTS Canada Project (@tbl-smartforest) [@comeau_alberta_2023]. This integration provides high resolution plot-level climate data for the LTS and can prove very valuable specifically for climate change adaptation studies as well as the development of new climate sensitive growth and yield models in the future.
+
+| Agency        | Installation           | Established | Lat | Long | Station Installed |
+|---------------|---------------------------------|------------------|----------|-------------|----------------------------|
+| AAF           | Median                 | 1992             | 55.32    | -114.07   | 2019                           |
+| ALPAC         | Median                 | 2001             | 55.22    | -111.91   | 2020                           |
+| CANFOR        | Median                 | 2001             | 54.76    | -117.40   | 2020                           |
+| LPCDC         | Median                 | 2000             | 53.76    | -120.05   | 2021                           |
+| LPCSR         | Median                 | 1998             | 56.49    | -101.25   | 2021                           |
+| Mercer        | Superior (Peace River) | 1992             | 56.39    | -118.59   | 2019                           |
+| Mercer        | Median (Hines Creek)   | 1992             | 56.41    | -117.73   | 2019                           |
+| SK            | Median                 | 1990             | 53.76    | -105.55   | 2021                           |
+| WFR           | Median                 | 1992             | 53.76    | -116.68   | 2020                           |
+| WGP           | Median                 | 1991             | 54.92    | -118.90   | 2020                           |
+
+: Microclimate and weather station installations in existing LTS installations as part of the Alberta SMARTFORESTS Canada Project {#tbl-smartforest}
+
+## Measurements
+The current measurement schedule for the LTS can be found in [@fig-schedule]. The schedule was provided to me by Dr. Mike Bokalo and is projected to measurement year 32. Measurements that are labeled "due" and were supposed to be done in 2021/22, are either in the process of being measured or have been submitted for review to Dr. Mike Bokalo. All installations completed the 5x5m aspen plot expansion (ALP_MED and LPCDC_SUP2 still need to be confirmed).
+
+The following measurements are taken:
+
+- DBH (cm)
+- Total Height (m)
+- Height Increment (cm), i.e. the length of the current leader 
+- Lean (for any trees leaning greater than 20 degrees off vertical)
+- Height to Life Crown (m)
+- North and West Crown radii (m)
+
+Since crown measurements are very time consuming, expensive and only really useful when taken with great precision, it was discussed to make those measurements optional. An email conversation with Dr. Phil Comeau on the matter can be found in the documents folder.
+
+\newpage
+\KOMAoptions{paper=landscape,pagesize}
+\newgeometry{top=1in,left=0.5in,right=0.5in}
+
+
+![LTS measurement schedule. Please zoom in for details (separate PDF version in documents folder).](figs/WB Agency status table April 2023 updated August 8th to Stefan.pdf){#fig-schedule width=135%}
+
+\newpage
+\KOMAoptions{paper=portrait,pagesize}
+\restoregeometry
+
+
+## Results from the LTS
+Many findings from the LTS study have been disseminated through a range of publications, including both peer-reviewed and non-peer-reviewed articles, as well as MSc and PhD theses. The following sections provides references for those publications (see documents folder for PDFs of these references).  
+
+### Refereed Journals
+1. Bokalo, M., P.G. Comeau and S.J. Titus. 2007. Early development of tended mixtures of aspen and spruce in western Canadian boreal forests. For. Ecol. Manage. 242: 175-184
+
+2. Comeau, P.G. 2021. Effects of thinning on dynamics and drought resistance of aspen-white spruce mixtures: results from two study sites in Saskatchewan. Front. For. Clim. Change. 3: 621752. DOI: 10.3389/ffgc.2020.621752
+
+3. Comeau, P.G. 2021. Effects of aspen and spruce density on size and number of lower branches 20 years after thinning of two boreal mixedwood stands. Forests 2021, 12, 211. doi 10.3390/f12020211
+
+4. Cortini, F., P.G. Comeau and M. Bokalo. 2012. Trembling aspen competition and climate effects on white spruce growth in boreal mixtures of Western Canada. For. Ecol. Manage. 277:67–73
+
+5. Filipescu, C. and P. Comeau. 2007. Aspen competition affects light and white spruce growth across several boreal sites in western Canada. Can. J. For. Res. 37: 1701-1713
+
+6. Filipescu, C. and P. Comeau. 2011. Influence of Populus tremuloides density on air and soil temperature. Scand.J. For. Res., 26:5, 421-428
+
+7. Kweon, D., and P.G. Comeau. 2019. Factors influencing overyielding in young boreal mixedwood stands in western Canada. For. Ecol. Manage. 432: 546-557. doi: 10.1016/j.foreco.2018.09.053
+
+8. Oltean, G., P.G. Comeau and B. White. 2016. Linking depth-to-water topographic index to soil moisture on boreal forest sites in Alberta. For. Sci. 62: 154-165. doi: 10.5849/forsci.15-054
+
+9. Voicu, M. and P. Comeau. 2006. Microclimatic and spruce growth gradients adjacent to young aspen stands. For. Ecol. Manage. 221: 13-26
+ 
+### Other publications
+1. Bokalo, M., S. Humphries and P. Comeau. 2021. Western Boreal Growth and Yield (WESBOGY) Association Long Term Study (LTS) of growth and development of mixed stands of spruce and aspen – Experimental Design, Data Collection and Database Maintenance Manual.  March 26, 2021. Version 4.2.
+
+2. Bokalo, M. , K., Johnson and P. Comeau. 2016. Enhancing growth and yield data collection methods using airborne image technology. Report submitted to Government of Alberta. December 23, 2016.
+
+3. Comeau, P. 2020. Results from age 26 remeasurement of the Big River WESBOGY LTS installation.  WESBOGY Research Note #2020-1. WESBOGY Research Note 2020-1
+
+4. Comeau, P., and M. Bokalo. 2023. Effects of aspen and spruce densities on tree and stand growth in the western boreal region of Canada: Results from the WESBOGY Long-Term Study to age 31. Draft Report for the WESBOGY project team.  Sept. 28, 2023. 45 pages.
+
+5. Comeau, P., M. Bokalo and S. Titus. 2004. Early dynamics of tended mixedwood stands. EFM Research Note 06/2004.
+
+6. Voicu, M. and P. Comeau. 2007. Gradients in microclimate and spruce growth adjacent to young aspen stands. EFM Research Note 01/2007.
+ 
+### Graduate student MSc theses
+1. Griffiths, S. 2008. Characterization of leaf area index and understory vegetation development following precommercial thinning of boreal mixedwood forests. M.Sc. thesis. Univ. of Alberta. (cosupervisors: Phil Comeau and Ellen Macdonald)
+
+2. Oltean, G.S. 2015. Estimation of site index and soil properties using the topographic depth-to-water index. M.Sc thesis. Univ. of Alberta. (supervisor: Phil Comeau)
+
+3. Voicu, M. 2004. Gradients in microclimate and spruce growth adjacent to young aspen stands. M.Sc. thesis. Univ. of Alberta (supervisor: Phil Comeau)
+ 
+### Graduate student PhD theses
+1. Cortini, F. 2010. Growth and yield implications of site preparation, competition control and climate in the western boreal forest. Ph.D thesis. Univ. of Alberta. (supervisor: Phil Comeau)
+
+2. Filipescu, C.N. 2009. Dynamics of competition in boreal mixedwood stands. Ph.D. thesis. Univ. of Alberta. (supervisor: Phil Comeau)
+
+3. Kweon, D. 2018. Aspen density dynamics in boreal mixedwood stands and the implications in western Canada. Ph.D. thesis. Univ. of Alberta. (supervisor: Phil Comeau)
+
+
+## Recommendation
+Our overall impression of the study is positive. The study's design is robust, and the ongoing collaboration between the forest industry, government, and the University of Alberta is exemplary. The scientific output is respectable, and students from the University of Alberta have successfully graduated by testing research questions and analyzing data from this study. We see no compelling reasons for discontinuing this experiment, unless there is a lack of interest or a diminished need among the participating agencies to further investigate long-term mixed-wood forest succession and growth and yield model development and validation.
+
+This is particularly true with the newly implemented SMARTFORESTS Canada Project [@comeau_alberta_2023] aimed at acquiring high-resolution plot-level climate data. This additional data source will make it possible to correlate growth responses within the LTS with climate variables, potentially proving invaluable for the future development and validation of new climate-sensitive growth and yield models. Whether this will be necessary in the near future remains to be seen. Nonetheless, having a study like LTS at your disposal demonstrates a proactive and forward-thinking approach.  
+
+Currently, there are two Government of Alberta approved growth and yield models available: the Growth and Yield Projection System ([GYPSY](https://www.alberta.ca/growth-and-yield-projection-system)) and the Mixedwood Growth Model ([MGM21]((https://mgm.ualberta.ca/mgm21/))). The development of the Mixedwood Growth Model was one of the two major objectives of the LTS, as outlined in the Objectives section. The Mixedwood Growth Model (MGM21) has undergone validation processes. It was validated against the Alberta Provincial Growth and Yield Initiative (PGYI) Dataset on April 27, 2021 [@comeau_validation_2021], and subsequently against the 2020 Saskatchewan Provincial Permanent Sample Plot dataset on December 15, 2022 [@bokalo_validation_2022]. At present, validation against the LTS dataset has not been conducted, potentially due to the relatively young age of the oldest trees, making a meaningful assessment of the model's forecasting abilities somewhat challenging. While this remains speculative on our part, the inquiry has been forwarded to Dr. Mike Bokalo and Dr. Phil Comeau for further clarification.
+
+Given that the oldest and youngest installations within the study have respective ages of 32 and 20, they can still be categorized as relatively young stands in the context of their progression along the successional path. We support the notion of making crown measurements optional, as previously discussed (refer to the section on Measurements). This approach will help reduce costs without jeopardizing the long-term objectives of the LTS, namely, the development of growth and yield models and other guiding management practices, as well as the evaluation of mixedwood stand dynamics following precommercial thinning. However, we would encourage the members to continue measuring the key growth, DBH (cm); Total Height (m); Height Increment (cm), i.e. the length of the current leader; Height to Life Crown (m). 
+
+An unfortunate setback for the LTS has been the discontinuation of measurements for the Government of the Northwest Territories installations, owing to a lack of government funding. Whether or not financial support will become available to measure these plots is presently unknown. 
+  
+## References
